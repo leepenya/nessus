@@ -1,0 +1,62 @@
+<p align="center">
+<img src="https://imgur.com/a/Ss9fqeY.png" height="60%" width="40%" alt="nessus Essentials Logo"/>
+</p>
+
+<h1>Scanning a host with Nessus</h1>
+Summary: In this project, I used Nessus Essentials to scan a Windows 10 virtual machine for vulnerabilities.<br />
+
+<h2>Requirements</h2>
+
+- Computer with internet connection
+- Oracle VirtualBox 
+- Virtual Machine ("VM") running in VirtualBox with MS Windows 10 installed
+- Nessus Essentials installed on the VM
+
+<h2>Steps to the Lab</h2>
+
+<p>
+<img src="https://imgur.com/94Pn2sC.png" height="80%" width="80%" alt="Scan Results"/>
+</p>
+<p>
+1. I launched a scan of the VM and noted that Nessus Essentials had detected at least one vulnerability it assessed as being of "medium" severity (marked in orange).
+</p>
+<br />
+
+<p>
+<img src= "https://imgur.com/NVYOkf5.png" height="80%" width="80%" alt="Vulnerability Detected"/>
+</p>
+<p>
+2. I inspected the scan results and noted the vulnerability detected by Nessus ("SMB signing not required"). 
+</p>
+<br />
+
+<p>
+<img src= "https://imgur.com/HbBFRTM.png" height="80%" width="80%" alt="Remediation Steps"/>
+</p>
+<p>
+3. I used ChatGPT to investigate how to remediate the vulnerability detected (i.e., modify the local policy in Security Settings).
+</p>
+<br />
+
+<p>
+<img src="https://imgur.com/ELMjcqn.png" height="80%" width="80%" alt="Vulnerability Remediated"/>
+</p>
+<p>
+I then followed the steps outlined by ChatGPT to remediate the vulnerability. 
+</p>
+<br />
+
+<p>
+<img src="https://imgur.com/hQVkeZF.png" height="80%" width="80%" alt="New Scan"/>
+</p>
+<p>
+4. I then ran a new scan and verified that the vulnerability no longer appeared.
+</p>
+<br />
+
+<p>Thanks for checking out my first Nessus lab!
+</p>
+
+
+</p>
+<br />
